@@ -1,0 +1,10 @@
+<h1>Users#update</h1>
+<p>Find me in app/views/users/update.html.erb</p>
+
+<%= form_for @user do |f| %>
+<%= f.text_field :first_name %><br>
+<%= f.text_field :last_name %><br>
+<%= f.text_field :age%><br>
+<%= f.submit 'Update' %>
+
+<% end %>

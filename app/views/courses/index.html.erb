@@ -1,0 +1,8 @@
+<h1>Courses#index</h1>
+<p>Find me in app/views/courses/index.html.erb</p>
+<%= form_for @courses do |u| %>
+<%= u.text_field :name %>
+<%= u.time :hours %>
+<%= link_to("Show", courses_index_path(u), :class => 'action edit')%>
+<%= link_to("Edit", courses_edit_path(u), :class => 'action edit') %>
+<% end

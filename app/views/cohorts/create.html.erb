@@ -1,0 +1,14 @@
+<h1>Cohorts#create</h1>
+<p>Find me in app/views/cohorts/create.html.erb</p>
+
+<%= form_for @cohort do |f| %>
+<%= f.label :name %>
+<%= f.text_field :name, value: @cohort.name #,required: true %>
+
+<%= f.label :start %>
+<%= f.date_select :select, value: @cohort.start_date %>
+
+<%= f.label :end %>
+<%= f.date_select :end, value: @cohort.end_date %>
+
+<%= f.submit %>

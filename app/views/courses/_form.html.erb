@@ -1,0 +1,10 @@
+<%= form_for @course do |f| %>
+
+<li><%= f.label :name %></li>
+<li><%= f.text_field :name %></li>
+
+<li><%= f.number_field :hours %></li>
+<li><%= f.label :hours %></li>
+
+<li><%= f.submit %></li>
+<% end %>

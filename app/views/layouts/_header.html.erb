@@ -1,0 +1,21 @@
+<ul>
+<li><%= link_to "Home", users_path %></li><br>
+<li><%= link_to "New Course", courses_new_path %></li><br>
+<li><%= link_to "New Instructor", instructors_new_path %></li><br>
+<li><%= link_to "New Cohort", cohorts_new_path %></li><br>
+<li><%= link_to "New Students", students_new_path %></li><br>
+
+
+<% if user_signed_in? %>
+<li><%= link_to "Sign Out", destroy_user_session_path, method: :delete %></li><br>
+<% else %>
+<li><%= link_to "Sign Up", new_user_registration_path %></li><br>
+<li><%= link_to "Log In", new_user_session_path %></li><br>
+<% end %>
+</ul>
+
+<ul>
+<% if user_signed_in? %>
+<li><%= link_to "New User", new_user_path %></li><br>
+<% end %>
+</ul>

@@ -1,0 +1,11 @@
+<h1>Users#index</h1>
+<p>Find me in app/views/users/index.html.erb</p>
+<p>He stay with that pump, Race </p>
+<p><% @user.each do |u| %> </p>
+<h2><%= link_to "#{u.first_name} #{u.last_name}", user_path(u) %></h2>
+
+<%= link_to("Show", user_path(u), :class => 'action edit')%>
+<%= link_to("Edit", edit_user_path(u), :class => 'action edit') %>
+
+<% end %>
+<br>

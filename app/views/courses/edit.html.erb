@@ -1,0 +1,10 @@
+<h1>Courses#edit</h1>
+<p>Find me in app/views/courses/edit.html.erb</p>
+
+<%= form_for @course |f| %>
+<%= f.label :name %>
+<%= f.text_field :name, value: @course.name %>
+<%= f.label :hours %>
+<%= f.number_field :hours, value: @course.hours%>
+<%= f.submit %>
+<% end %>

@@ -1,0 +1,9 @@
+<h1>Users#destory</h1>
+<p>Find me in app/views/users/destory.html.erb</p>
+
+<p><% @user do |u| %> </p>
+<%= u.first_name :first_name %>
+<%= u.last_name :last_name %>
+<%= u.age :age %>
+<%= u.destroy 'Delete' %>
+<% end %>
